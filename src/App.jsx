@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Sidebar from './components/Sidebar'
 
 function App() {
 
@@ -32,7 +33,8 @@ theme="light"
     <Routes>
     <Route path='/home' element={<Home/>}/>
     <Route path='/signup' element={<SignUp/>}/>
-    <Route path='/login' element={<Login/>}/>
+    <Route path='/login' element={<Login/>}/> 
+    <Route path='/' element={<Sidebar/>}/>
     </Routes>
   
     </>

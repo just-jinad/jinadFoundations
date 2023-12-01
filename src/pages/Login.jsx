@@ -1,9 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Login = () => {
+  let navigate = useNavigate()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   
@@ -26,10 +27,15 @@ const Login = () => {
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
-          draggable: true,
+          draggable: true, 
           progress: undefined,
           theme: "light",
+          
+
         });
+        setTimeout(() => {
+          navigate("/")
+        }, 7000);
       }else if(password && email && response.data.status == false){
         toast.error("Wrong Email 👾" , {
           position: "top-center",

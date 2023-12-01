@@ -45,7 +45,7 @@ const Signup = () => {
           values.password &&
           response.data.status == false
         ) {
-          toast("Email already exists 👾", {
+          toast.error("Email already exists 👾", {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
