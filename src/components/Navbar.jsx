@@ -11,7 +11,7 @@ const Navbar = () => {
     <a className="navbar-brand fw-bold text-warning " href="#">just_Jinad</a>
 
     <ul className='col-md-3 gap-3  d-flex list-unstyled' style={{cursor:"pointer"}}>
-      <Link to={"/home"} className='text-decoration-none text-black fw-bold'>Home</Link>
+      <Link to={"/"} className='text-decoration-none text-black fw-bold'>Home</Link>
       <Link to={"/signup"} className='text-decoration-none text-black fw-bold'>SignUp</Link>
       <Link to={"/login"} className='text-decoration-none text-black fw-bold'>Login</Link>
   </ul>

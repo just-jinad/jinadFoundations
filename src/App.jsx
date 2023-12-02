@@ -31,10 +31,10 @@ theme="light"
 
     <Navbar/>
     <Routes>
-    <Route path='/home' element={<Home/>}/>
+    <Route path='/dashboard' element={<Sidebar/>}/>
     <Route path='/signup' element={<SignUp/>}/>
     <Route path='/login' element={<Login/>}/> 
-    <Route path='/' element={<Sidebar/>}/>
+    <Route path='/' element={ <Home/>}/>
     </Routes>
   
     </>
