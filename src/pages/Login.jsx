@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("")
   
 
-  let url = "http://localhost:4000/user/login";
+  let url = "https://jfoundationsbackend.onrender.com/user/login";
 
   const loginBtn = () => {
     let loginInfo = {
@@ -33,11 +33,12 @@ const Login = () => {
           
 
         });
+        localStorage.userToken=email
         setTimeout(() => {
-          navigate("/")
+          navigate("/dashboard")
         }, 7000);
       }else if(password && email && response.data.status == false){
-        toast.error("Wrong Email 👾" , {
+        toast.error("Wrong Email or password👾" , {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
