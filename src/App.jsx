@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Sidebar from './components/Sidebar'
 import Adminsignup from './components/Adminsignup'
+import Datafile from './components/Datafile'
 
 function App() {
 
@@ -37,6 +38,7 @@ theme="light"
     <Route path='/signup' element={<SignUp/>}/>
     <Route path='/login' element={<Login/>}/> 
     <Route path='/' element={ <Home/>}/>
+    <Route path='/api' element={ <Datafile/>}/>
     </Routes>
   
     </>

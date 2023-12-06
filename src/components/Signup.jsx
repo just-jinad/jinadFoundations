@@ -11,7 +11,8 @@ const Signup = () => {
   // const [lastName, setLastname] = useState("");
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
-  let url = "https://jfoundationsbackend.onrender.com/user/signup";
+  let url = "http://localhost:4000/user/signup";
+  // let url = "https://jfoundationsbackend.onrender.com/user/signup";
   let navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
