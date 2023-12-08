@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Sidebar from './components/Sidebar'
 import Adminsignup from './components/Adminsignup'
 import Datafile from './components/Datafile'
+import Viewapi from './components/Viewapi'
 
 function App() {
 
@@ -39,6 +40,8 @@ theme="light"
     <Route path='/login' element={<Login/>}/> 
     <Route path='/' element={ <Home/>}/>
     <Route path='/api' element={ <Datafile/>}/>
+   
+      <Route path='/blogs/:id' element={<Viewapi/>} />
     </Routes>
   
     </>

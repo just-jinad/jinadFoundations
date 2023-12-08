@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Aim from './Aim';
 import Footer from './Footer';
-
+import { Link } from 'react-router-dom';
 const Hero = () => {
   
   const [user, setUser] = useState("")
@@ -33,35 +33,36 @@ const Hero = () => {
 
 
 
-      <div className="user-list row  container-fluid">
-
-
-        <p className='  introOne animate__animated animate__bounce'>Hello and Welcome to JustJinad Foundations.....</p>
+    
+        <div className=' row  container-fluid mx-auto mt-3'>
+        
+        <h1 style={{fontSize:"27px",}} className='  introOne animate__animated animate__bounce fw-bolder'>Hello and Welcome to JustJinad Foundations.....</h1><br />
         <div className='user-lis col-md-6 animate__animated animate__fadeInUp'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eligendi nobis perferendis aspernatur fugiat ab temporibus totam enim cumque voluptatum!</p>
+        <p className='fw-bold'>
+        "Just Jinad Foundations is a dedicated blog website with a mission to empower children through education, aligning closely with the United Nations Sustainable Development Goals (SDGs), particularly SDG 4: Quality Education. Focused on delivering valuable insights into educational materials, the foundation strives to illuminate the path to knowledge for young minds."</p>
 
-        <div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam numquam impedit hic itaque qui consectetur eum, rerum officia ab natus.
-        </div>
+        <p >
+        As a beacon of educational enlightenment, Just Jinad Foundations aspires to contribute to a future where every child, regardless of background, has the tools and motivation to unlock their full potential. By nurturing a generation of lifelong learners, the foundation aims to create a positive impact that extends far beyond the digital realm of its blog, shaping the leaders, thinkers, and innovators of tomorrow, in line with the transformative vision of SDG 4."
+        </p>
       <div className='d-flex justify-content-around mt-4 mb-3'>
-        <button className='btn btn-outline-warning bg-warning text-white'>Sign Up</button>
-        <button className='btn btn-success '>Donate</button>
+        <button className='btn btn-outline-warning bg-warning text-white' ><Link to={"/signup"} className='text-decoration-none text-white fw-bold'>Sign Up</Link> </button>
+        <button className='btn btn-outline-success bg-success text-white' ><Link to={"/login"} className='text-decoration-none text-white fw-bold'>Login</Link> </button>
       </div>
         </div>
 
         
         <img id='imageOne' src="https://i.pinimg.com/564x/c4/90/7a/c4907a3f5d5579a43759e1d634b28b17.jpg" alt="" className='  col-md-6 '/>
-      </div>
 
-    <div>
-      <img data-aos="fade-up" data-aos-duration="2000"  id="arrowOne" className='mt-5' src="/images/arrowOneRemoved.png" alt="" />
-    </div>
+        </div>
 
-    <div>
-      <p className='text-center text-warning'>What we do</p>
-      <h4 className='text-center fw-bold'>Make a Difference</h4>
-      <p className='text-center fst-italic '>Make a Difference, Change the world through sharing of ideas and dreams!</p>
-      <p className='text-center fst-italic '>Dream of an African child</p>
+
+
+    <div className='mt-5 p-5 ' style={{backgroundColor:"#eff2e4", fontFamily:"cursive"}}>
+      
+      <h2 className='text-center text-warning'>What we do!</h2>
+      <h5 className='text-center fw-bold'>Make a Difference, Create Impact, Transform Lives</h5>
+      <p className='text-center  '>Create impact, change the world by sharing ideas and dreams</p>
+      <p className='text-center   fw-bold'>Nurturing the Dreams of African Children..</p>
     </div>
 
       

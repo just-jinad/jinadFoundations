@@ -26,9 +26,11 @@ const SideNavbar = () => {
     
   }
   return (
-    <div className="container-fluid">
+<>
+
+    <div className="container-fluid ">
       <div className="row">
-        <nav id="sidebar" className="col-md-3 col-lg-2 d-md-block bg-light sidebar  d-none d-md-block">
+        <nav id="sidebar" className="col-md-3 col-lg-2 d-md-block bg-light sidebar  d-none d-md-block ">
           <div className="position-sticky">
             <ul className="nav flex-column">
               <li className="nav-item">
@@ -81,6 +83,7 @@ const SideNavbar = () => {
         </main>
       </div>
     </div>
+    </>
   );
 };
 
