@@ -20,7 +20,7 @@ const Datafile = () => {
     </div> */}
 
     <div>
-      <h1>Blog List</h1>
+      <h5>Blog List</h5>
       <ul>
         {apiData.map(blog => (
           <li key={blog.id}>
@@ -28,7 +28,7 @@ const Datafile = () => {
             <h6>{blog.title}</h6>
             <p>Author: {blog.author}</p>  
             </Link>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quas?</p> 
+         
           </li>
         ))}
       </ul>

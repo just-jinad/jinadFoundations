@@ -25,13 +25,15 @@ const Viewapi = () => {
     <div>
       {blog ? (
         <>
+          <img src={blog.image} alt="" style={{height:"60px"}}/>
           <p>Title: {blog.title}</p>
           <p>Author: {blog.author}</p>
+          <p>Content: {blog.content}</p>
         </>
       ) : (
         <p>Loading...</p>
       )}
-      <p>Hello, welcome to view API {id}</p>
+    
     </div>
     </>
   )
