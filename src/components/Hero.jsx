@@ -37,7 +37,7 @@ const Hero = () => {
         <div className=' row  container-fluid mx-auto mt-3'>
         
         <h1 style={{fontSize:"27px",}} className='  introOne animate__animated animate__bounce fw-bolder'>Hello and Welcome to JustJinad Foundations.....</h1><br />
-        <div className='user-lis col-md-6 animate__animated animate__fadeInUp'>
+        <div className='user-lis col-md-6 animate__animated animate__fadeInUp' style={{fontFamily:"Times New roman"}}>
         <p className='fw-bold'>
         "Just Jinad Foundations is a dedicated blog website with a mission to empower children through education, aligning closely with the United Nations Sustainable Development Goals (SDGs), particularly SDG 4: Quality Education. Focused on delivering valuable insights into educational materials, the foundation strives to illuminate the path to knowledge for young minds."</p>
 

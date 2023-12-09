@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Datafile from './Datafile';
 
 
 const SideNavbar = () => {
@@ -80,6 +81,7 @@ const SideNavbar = () => {
           <div className="pt-3">
            <p>Welcome {userinfo?userinfo?.lastName:null}</p>
           </div>
+    <Datafile/>
         </main>
       </div>
     </div>
