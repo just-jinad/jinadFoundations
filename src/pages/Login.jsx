@@ -9,8 +9,8 @@ const Login = () => {
   const [password, setPassword] = useState("")
   
 
-  let url = "https://jfoundationsbackend.onrender.com/user/login";
-  // let url = "http://localhost:4000/user/login";
+  // let url = "https://jfoundationsbackend.onrender.com/user/login";
+  let url = "http://localhost:4000/user/login";
 
   const loginBtn = () => {
     let loginInfo = {

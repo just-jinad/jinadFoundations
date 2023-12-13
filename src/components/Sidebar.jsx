@@ -79,7 +79,7 @@ const SideNavbar = () => {
 
         <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div className="pt-3">
-           <p>Welcome {userinfo?userinfo?.lastName:null}</p>
+        <div>Welcome <span className='fw-bold fst-italic h4 text-secondary'>{userinfo?userinfo?.lastName:null}</span></div>
           </div>
     <Datafile/>
         </main>
