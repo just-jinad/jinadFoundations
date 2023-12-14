@@ -17,8 +17,8 @@ const Navbar = () => {
   </ul>
 
   <ul className='col-md-3  d-flex gap-3 list-unstyled' style={{cursor:"pointer"}}>
-    <li>Admin</li>
-    <li> FAQs </li>
+  <Link to={"/create"} className='text-decoration-none text-black fw-bold'>Create Resource</Link>
+  <Link to={"/dashboard"} className='text-decoration-none text-black fw-bold'>Dashboard</Link>
     <li> Games </li>
   </ul>
 
