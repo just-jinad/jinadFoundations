@@ -20,9 +20,19 @@ const Viewapi = () => {
     
     console.log(blog);
 
+    const deleteResource=()=>{
+  
+      // let userName = prompt("Are You sure you want to delete this?")
+      // if (prompt===true) {
+      //   alert("deleted")
+      // }else{
+      //   alert("God save you")
+      // }
+    }
+
   return (
     <>
-    <div>
+    <div className='container'>
       {blog ? (
         <>
           <img src={blog.image} alt="" style={{height:"60px"}}/>
@@ -34,6 +44,7 @@ const Viewapi = () => {
         <p>Loading...</p>
       )}
     
+    <button style={{cursor:"pointer"}} className='btn btn-danger' onClick={deleteResource}>Delete</button>
     </div>
     </>
   )

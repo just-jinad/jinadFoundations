@@ -106,9 +106,13 @@ margin: 10% 50% 0% 25%;
     color: #fff;
     right: 0;
   }
-  /* .get-position p ,h3 ,h6{
-    font-family: 'Times New Roman' !important;
-  
-  }
-   */
+
+
+   /* Remove border from accordion */
+.accordion-item {
+  border: none;
+}
+
+
+
 
