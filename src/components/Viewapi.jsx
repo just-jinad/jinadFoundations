@@ -21,13 +21,13 @@ const Viewapi = () => {
     console.log(blog);
 
     const deleteResource=()=>{
+      alert("seen")
+      axios.delete('http://localhost:4000/api/blogs/')
+      .then((response)=>{
+        console.log(response);
+      })
   
-      // let userName = prompt("Are You sure you want to delete this?")
-      // if (prompt===true) {
-      //   alert("deleted")
-      // }else{
-      //   alert("God save you")
-      // }
+  
     }
 
   return (
